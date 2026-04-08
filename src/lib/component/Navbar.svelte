@@ -14,9 +14,9 @@
 		class:bg-transparent={ui.firstPageNavbarMode}
 		class:dark:shadow-none={ui.firstPageNavbarMode}
 		class:dark:bg-transparent={ui.firstPageNavbarMode}
-		class="fixed top-0 z-50 flex h-18 w-full justify-center bg-primary/90 px-6 shadow-xl/50 transition-all duration-200 ease-in lg:h-20 lg:px-16 dark:bg-secondary/90"
+		class="fixed top-0 z-50 flex h-18 w-full justify-center bg-primary/90 shadow-xl/50 transition-all duration-200 ease-in lg:h-20 dark:bg-secondary/90"
 	>
-		<div class="container flex w-full justify-between">
+		<div class="flex w-full max-w-7xl justify-between">
 			<Logo />
 			<DekstopMenu />
 

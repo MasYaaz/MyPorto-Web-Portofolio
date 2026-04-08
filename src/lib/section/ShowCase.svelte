@@ -12,14 +12,14 @@
 			live: ''
 		},
 		{
-			title: 'Bukber IKPM Registration System',
+			title: 'Tabligh Akbar IKPM Registration System',
 			pict: './images/bukber-ikpm.webp',
 			description:
 				'Sistem manajemen event terpadu dengan fitur check-in QR Code dan dashboard admin multi-role untuk efisiensi registrasi peserta secara realtime.',
 			tech: ['SvelteKit', 'TailwindCSS', 'Supabase', 'Qr Scanner'],
 			status: 'online',
 			github: '#',
-			live: 'https://admin-bukberikpm.netlify.app/login'
+			live: 'https://tablighakbar2026.netlify.app/login'
 		},
 		{
 			title: 'My Porto Web',
@@ -29,7 +29,7 @@
 			tech: ['Sveltekit'],
 			status: 'online',
 			github: '#',
-			live: '#'
+			live: 'https://myportowebportofolio.netlify.app'
 		}
 	];
 </script>
@@ -39,7 +39,7 @@
 	class="flex min-h-screen w-full items-center bg-secondary py-20 dark:bg-primary"
 >
 	<div
-		class="container mx-auto flex flex-col items-center px-6 transition-all duration-700 ease-out lg:px-16"
+		class="mx-auto flex max-w-7xl flex-col items-center px-6 transition-all duration-700 ease-out"
 	>
 		<div class="mb-12 text-center">
 			<h2
@@ -56,7 +56,7 @@
 		<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
 			{#each projects as project}
 				<div
-					class="group relative flex flex-col border border-slate-200 bg-white p-6 transition-all hover:-translate-y-2 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900"
+					class="group relative flex flex-col rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:-translate-y-2 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900"
 				>
 					<img
 						alt="Project foto pict"

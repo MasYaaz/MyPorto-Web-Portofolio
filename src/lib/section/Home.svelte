@@ -14,10 +14,10 @@
 	></div>
 
 	<div
-		class="z-10 container mx-auto flex w-full flex-col items-stretch justify-between gap-5 pt-20 lg:min-h-screen lg:flex-row lg:pt-26"
+		class="z-10 container mx-auto flex w-full max-w-7xl flex-col items-stretch justify-between gap-5 pt-20 lg:min-h-screen lg:flex-row lg:pt-26"
 	>
 		<LeftSideText />
-		<Image />
+
 		<RightSideText />
 	</div>
 </section>

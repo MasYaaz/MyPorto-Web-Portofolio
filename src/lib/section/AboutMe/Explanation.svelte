@@ -1,4 +1,4 @@
-<div class="flex w-full flex-col gap-6 lg:flex-row">
+<div class="flex w-full max-w-7xl flex-col gap-6 lg:flex-row">
 	<div class="flex flex-col items-center gap-6">
 		<div class="relative aspect-square w-64 overflow-hidden sm:w-80 lg:w-100">
 			<img

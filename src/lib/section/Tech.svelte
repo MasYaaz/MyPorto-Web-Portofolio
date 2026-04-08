@@ -44,8 +44,10 @@
 
 		{
 			name: 'Ollama',
-			logo: 'https://ollama.com/public/ollama.png',
+			logo: 'https://svgl.app/library/ollama.svg',
 			category: 'ai',
+			color: 'rgba(0, 0, 0, 0.5)',
+			invertDark: true, // Karena logo Ollama aslinya hitam, ini berguna untuk dark mode
 			desc: 'Local AI & LLM Integration'
 		},
 		{
@@ -77,7 +79,7 @@
 	class="flex min-h-screen w-full flex-col items-center justify-center gap-8 bg-secondary py-16 md:pt-30 dark:bg-primary"
 	id="section_3"
 >
-	<div class="container mx-auto w-full px-6 text-primary lg:px-16 dark:text-secondary">
+	<div class="container mx-auto w-full max-w-7xl px-6 text-primary dark:text-secondary">
 		<div class="bg-brown space-y-10 rounded-2xl border border-primary/5 p-8 shadow-xl">
 			<div class="text-center">
 				<h2
