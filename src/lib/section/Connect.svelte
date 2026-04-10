@@ -37,7 +37,7 @@
 		</p>
 	</div>
 
-	<div class="container grid grid-cols-1 gap-8 px-6 md:grid-cols-3 lg:px-16">
+	<div class="container grid max-w-7xl grid-cols-1 gap-8 px-6 md:grid-cols-3 md:px-16 lg:px-0">
 		{#each socialLinks as link}
 			<a
 				href={link.href}

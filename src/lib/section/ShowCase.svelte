@@ -39,7 +39,7 @@
 	class="flex min-h-screen w-full items-center bg-secondary py-20 dark:bg-primary"
 >
 	<div
-		class="mx-auto flex max-w-7xl flex-col items-center px-6 transition-all duration-700 ease-out"
+		class="mx-auto flex max-w-7xl flex-col items-center px-6 transition-all duration-700 ease-out lg:px-0"
 	>
 		<div class="mb-12 text-center">
 			<h2
