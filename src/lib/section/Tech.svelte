@@ -44,7 +44,7 @@
 
 		{
 			name: 'Ollama',
-			logo: 'https://svgl.app/library/ollama.svg',
+			logo: 'https://unpkg.com/@lobehub/icons-static-svg@latest/icons/ollama.svg',
 			category: 'ai',
 			color: 'rgba(0, 0, 0, 0.5)',
 			invertDark: true, // Karena logo Ollama aslinya hitam, ini berguna untuk dark mode
@@ -52,7 +52,7 @@
 		},
 		{
 			name: 'WA Bot API',
-			logo: 'https://www.vectorlogo.zone/logos/whatsapp/whatsapp-icon.svg',
+			logo: 'https://static.cdnlogo.com/logos/w/29/whatsapp-icon.svg',
 			category: 'ai',
 			desc: 'Automated AI Chatbots'
 		},
