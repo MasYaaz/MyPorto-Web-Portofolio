@@ -15,7 +15,7 @@
 	></div>
 
 	<div
-		class="z-10 container mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-12 lg:flex-row lg:pt-0"
+		class="z-10 container mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-12 pt-20 lg:flex-row xl:pt-0"
 	>
 		<!-- Sisi Kiri: Tulisan -->
 		<div
@@ -59,8 +59,7 @@
 		</div>
 
 		<!-- Sisi Kanan: Call to Action -->
-		<div
-			class="order-3 flex flex-1 flex-col items-center gap-6 text-center lg:items-end lg:justify-center lg:text-right"
-		></div>
+
+		<Image />
 	</div>
 </section>
