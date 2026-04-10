@@ -1,4 +1,4 @@
-<div class="flex h-16 w-[20%] md:h-18 lg:h-20">
+<div class="flex h-16 w-[30%] sm:w-[20%] md:h-18 lg:h-20">
 	<div class="logo-brand w-fit"></div>
 </div>
 

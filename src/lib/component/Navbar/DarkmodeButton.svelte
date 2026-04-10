@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { theme } from '$lib/stores/DarkModeStates.svelte';
-	import { ui } from '$lib/stores/UIStates.svelte';
 </script>
 
 <button
@@ -8,13 +7,11 @@
 	aria-label="tombol darkmode"
 	class="btn-darkmode transition-transform duration-500 hover:scale-110 hover:cursor-pointer"
 >
-	<div class="icon-toggle"></div>
+	<div class="icon-toggle h-6 w-6 lg:h-8 lg:w-8"></div>
 </button>
 
 <style>
 	.icon-toggle {
-		width: 24px;
-		height: 24px;
 		background-color: currentColor; /* Warna mengikuti class text-primary/secondary */
 		transition: mask-image 0.2s ease-in-out;
 		/* Default: Sun Icon */
