@@ -14,7 +14,7 @@
 			<button
 				onclick={() => ui.scrollToSection(item.id)}
 				aria-label={item.aria}
-				class="my-4 w-[80%] border-b p-2 text-xl font-semibold tracking-wide text-white transition-colors hover:text-secondary"
+				class="scallop-box my-4 w-[80%] border-4 border-secondary p-6 font-primary text-xl font-semibold tracking-wide text-white transition-colors hover:text-secondary"
 			>
 				{item.label}
 			</button>

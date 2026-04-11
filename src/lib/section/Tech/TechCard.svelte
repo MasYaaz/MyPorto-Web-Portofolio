@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="flex items-center gap-4 border border-primary/5 bg-white/5 p-4 transition-all hover:border-primary/20"
+	class="flex items-center gap-4 border border-primary/5 bg-orange/5 p-4 transition-all hover:border-primary/20 dark:bg-secondary/5 dark:hover:border-secondary/10"
 >
 	<img
 		src={item.logo}

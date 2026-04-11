@@ -1,9 +1,9 @@
 <script>
-	import image from '$lib/images/profil1.webp';
+	import image from '$lib/images/profil-1.webp';
 </script>
 
 <!-- Posisikan ke kanan bawah -->
-<div class="absolute right-0 bottom-0 z-0 hidden lg:flex lg:w-[45%] lg:flex-2 lg:justify-start">
+<div class="z-0 flex px-10 lg:w-[50%]">
 	<img
 		src={image}
 		loading="eager"

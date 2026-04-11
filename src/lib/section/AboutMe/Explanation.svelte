@@ -1,38 +1,64 @@
-<div class="flex w-full max-w-7xl flex-col gap-6 lg:flex-row">
-	<div class="flex flex-col items-center gap-6">
-		<div class="relative aspect-square w-64 overflow-hidden sm:w-80 lg:w-100">
-			<img
-				src="./images/profil-light.webp"
-				alt="Foto Personal"
-				class="absolute inset-0 h-full w-full object-contain transition-opacity duration-700 ease-out dark:opacity-0"
-			/>
-			<img
-				src="./images/profil-dark.webp"
-				alt="Foto Personal"
-				class="absolute inset-0 h-full w-full object-contain opacity-0 transition-opacity duration-700 ease-out dark:opacity-100"
-			/>
-		</div>
+<script>
+	import profil from '$lib/images/profil-2.webp';
+</script>
 
-		<div class="text-center">
-			<h2
-				class="inline-block border-b-4 border-primary pb-1 font-primary text-3xl font-semibold text-primary uppercase sm:text-4xl lg:text-5xl dark:border-secondary dark:text-secondary"
+<div class="flex w-full max-w-7xl flex-col gap-6 px-2 pt-20 lg:flex-row">
+	<img
+		src={profil}
+		alt="Foto Personal"
+		class="h-full w-full rotate-2 object-contain px-2 shadow-xl lg:m-12"
+	/>
+
+	<div class="flex transform flex-col items-center gap-6 lg:my-12">
+		<div class="grid w-full grid-cols-1 gap-4 px-2 md:grid-cols-2 md:gap-6 lg:px-0">
+			<div
+				class="scallop-box group col-span-1 flex rotate-1 flex-col justify-center bg-primary px-6 py-8 text-center transition-all duration-300 hover:scale-[1.02] hover:rotate-0 md:col-span-2 md:px-10 dark:bg-secondary"
 			>
-				About Me
-			</h2>
+				<p
+					class="font-secondary text-xs text-secondary italic opacity-80 md:text-base dark:text-primary"
+				>
+					My Name
+				</p>
+				<h2
+					class="font-primary text-3xl font-black tracking-tighter text-secondary uppercase sm:text-4xl md:text-6xl dark:text-primary"
+				>
+					Aflah Mahdi Yazdi
+				</h2>
+			</div>
+
+			<div
+				class="scallop-box group flex -rotate-1 flex-col items-center justify-center bg-orange p-6 text-secondary transition-all duration-300 hover:scale-[1.02] hover:rotate-0 md:-rotate-2"
+			>
+				<p
+					class="font-secondary text-[10px] font-bold tracking-widest uppercase opacity-70 md:text-xs"
+				>
+					From
+				</p>
+				<p class="font-primary text-2xl font-black uppercase md:text-4xl">Indonesia</p>
+			</div>
+
+			<div
+				class="scallop-box group flex rotate-1 flex-col items-center justify-center bg-aqua p-6 text-secondary transition-all duration-300 hover:scale-[1.02] hover:rotate-0 md:rotate-2 dark:bg-secondary dark:text-primary"
+			>
+				<p
+					class="font-secondary text-[10px] font-bold tracking-widest uppercase opacity-70 md:text-xs"
+				>
+					Base
+				</p>
+				<p class="font-primary text-2xl font-black uppercase md:text-4xl">Surabaya</p>
+			</div>
 		</div>
-	</div>
-	<div
-		class="flex transform flex-col items-center p-6 text-primary shadow-sm transition-all duration-700 ease-out dark:text-secondary"
-	>
-		<div class="relative px-8 py-4">
+		<div
+			class="scallop-box relative bg-orange p-8 text-secondary shadow-sm transition-all duration-700 ease-out dark:text-secondary"
+		>
 			<span
-				class="absolute top-0 left-0 -translate-x-2 -translate-y-4 font-serif text-7xl text-primary opacity-20 select-none md:text-9xl dark:text-secondary"
+				class="absolute top-4 left-4 -translate-x-2 -translate-y-3 font-serif text-7xl opacity-20 select-none md:text-9xl"
 			>
 				“
 			</span>
 
 			<p
-				class="relative z-10 text-center font-display text-sm leading-relaxed md:text-base lg:text-lg xl:text-xl"
+				class="relative z-10 text-center font-display text-sm leading-relaxed md:text-base lg:text-lg"
 			>
 				As an enthusiastic
 				<span class="font-bold text-primary dark:text-secondary">Full-Stack Developer</span>, I am
@@ -54,7 +80,7 @@
 			</p>
 
 			<span
-				class="absolute right-0 bottom-0 translate-x-2 translate-y-6 font-serif text-7xl text-primary opacity-20 select-none sm:-bottom-14 md:text-9xl dark:text-secondary"
+				class="absolute right-4 bottom-0 translate-x-2 translate-y-6 font-serif text-7xl opacity-20 select-none sm:-bottom-14 md:text-9xl lg:bottom-4 lg:translate-y-3"
 			>
 				”
 			</span>
