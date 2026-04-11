@@ -25,12 +25,11 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
 
 	<link
-		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100..900;1,100..900&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 		rel="stylesheet"
 	/>
 
-	<link rel="icon" href="./light-theme.svg" media="(prefers-color-scheme: light)" />
-	<link rel="icon" href="./dark-theme.svg" media="(prefers-color-scheme: dark)" />
+	<link rel="icon" href="./logo.svg" />
 	<title>MyPorto - Web Portofolio</title>
 </svelte:head>
 
