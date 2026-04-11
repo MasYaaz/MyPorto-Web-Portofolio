@@ -2,12 +2,89 @@
 @custom-variant dark (&:where(.dark, .dark *));
 @theme {
 	--font-display: 'Montserrat', sans-serif;
-	--font-primary: 'Montserrat Alternates', sans-serif;
-	--color-primary: #0a1128ff;
-	--color-secondary: #fefcfbff;
-	--color-deep-navy: #001f54ff;
-	--color-yale-blue: #034078ff;
-	--color-cerulean: #1282a2ff;
+	--font-primary: 'Cooper', sans-serif;
+	--color-primary: #36374b;
+	--color-secondary: #faf2de;
+	--color-orange: #cc5500;
+	--color-aqua: #7fb7be;
+	--color-yellow: #e1ad01;
+	/* Jika pakai Tailwind 4 / SvelteKit terbaru */
+	--mask-scallop:
+		radial-gradient(circle 12px at 0 0, transparent 99%, black 100%),
+		radial-gradient(circle 12px at 100% 0, transparent 99%, black 100%),
+		radial-gradient(circle 12px at 100% 100%, transparent 99%, black 100%),
+		radial-gradient(circle 12px at 0 100%, transparent 99%, black 100%);
+}
+
+@font-face {
+	font-family: 'Cooper';
+	src: url('$lib/font/CooperBlkBT-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Cooper';
+	src: url('$lib/font/CooperBlkBT-Italic.woff2') format('woff2');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Cooper';
+	src: url('$lib/font/CooperLtBT-Bold.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Cooper';
+	src: url('$lib/font/CooperLtBT-BoldItalic.woff2') format('woff2');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Cooper';
+	src: url('$lib/font/CooperLtBT-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Cooper';
+	src: url('$lib/font/CooperLtBT-Italic.woff2') format('woff2');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Cooper';
+	src: url('$lib/font/CooperMdBT-Italic.woff2') format('woff2');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Cooper';
+	src: url('$lib/font/CooperMdBT-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+.scallop-box {
+	mask-image: var(--mask-scallop);
+	mask-composite: intersect;
+	-webkit-mask-image: var(--mask-scallop);
+	-webkit-mask-composite: source-in;
 }
 
 html {
