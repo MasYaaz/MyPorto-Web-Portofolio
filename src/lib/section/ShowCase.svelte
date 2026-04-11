@@ -1,9 +1,14 @@
 <script>
+	import SectionTitle from '$lib/component/UIComponent/SectionTitle.svelte';
+	import chatbot from '$lib/images/chatbot.webp';
+	import regis from '$lib/images/regis.webp';
+	import porto from '$lib/images/porto.webp';
+
 	// Contoh data project - Nantinya ini bisa kamu pindahkan ke file konstanta
 	const projects = [
 		{
 			title: 'WhatsApp Chatbot AI',
-			pict: './images/chatbot.webp',
+			pict: chatbot,
 			description:
 				'Chatbot pintar menggunakan Ollama untuk integrasi AI lokal dengan fitur message buffering.',
 			tech: ['Bun', 'Ollama', 'Qwen 2.5', 'WhatsApp Web JS'],
@@ -13,7 +18,7 @@
 		},
 		{
 			title: 'Tabligh Akbar IKPM Registration System',
-			pict: './images/bukber-ikpm.webp',
+			pict: regis,
 			description:
 				'Sistem manajemen event terpadu dengan fitur check-in QR Code dan dashboard admin multi-role untuk efisiensi registrasi peserta secara realtime.',
 			tech: ['SvelteKit', 'TailwindCSS', 'Supabase', 'Qr Scanner'],
@@ -23,7 +28,7 @@
 		},
 		{
 			title: 'My Porto Web',
-			pict: './images/myporto.webp',
+			pict: porto,
 			description:
 				'Website portofolio yang kamu buka sekarang ini yang menerapkan konsep svelte runes secara konsisten.',
 			tech: ['Sveltekit'],
@@ -36,18 +41,14 @@
 
 <section
 	id="section_4"
-	class="flex min-h-screen w-full items-center bg-secondary py-20 dark:bg-primary"
+	class="relative flex min-h-screen w-full items-center bg-secondary py-20 dark:bg-primary"
 >
 	<div
-		class="mx-auto flex max-w-7xl flex-col items-center px-6 transition-all duration-700 ease-out lg:px-0"
+		class="z-10 mx-auto flex max-w-7xl flex-col items-center px-6 transition-all duration-700 ease-out lg:px-0"
 	>
 		<div class="mb-12 text-center">
-			<h2
-				class="inline-block border-b-4 border-primary pb-1 font-primary text-3xl font-bold text-primary uppercase sm:text-5xl dark:border-secondary dark:text-secondary"
-			>
-				Featured Projects
-			</h2>
-			<p class="mt-4 max-w-2xl text-slate-600 dark:text-slate-400">
+			<SectionTitle title="Featured Projects" />
+			<p class="mt-4 max-w-2xl font-display text-primary dark:text-secondary">
 				Berikut adalah beberapa proyek pengembangan web dan sistem yang telah saya kerjakan
 				baru-baru ini.
 			</p>
@@ -56,7 +57,7 @@
 		<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
 			{#each projects as project}
 				<div
-					class="group relative flex flex-col rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:-translate-y-2 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900"
+					class="group scallop-box relative flex flex-col border-4 border-orange bg-white p-6 transition-all hover:-translate-y-2 dark:border-secondary dark:bg-slate-900"
 				>
 					<img
 						alt="Project foto pict"
@@ -67,14 +68,14 @@
 						{project.title}
 					</h3>
 
-					<p class="mb-6 grow text-sm text-slate-600 dark:text-slate-400">
+					<p class="mb-6 grow text-justify font-display text-sm text-primary dark:text-secondary">
 						{project.description}
 					</p>
 
 					<div class="mb-6 flex flex-wrap gap-2">
 						{#each project.tech as item}
 							<span
-								class="rounded-md bg-slate-100 px-2 py-1 text-xs font-medium text-slate-700 dark:bg-slate-800 dark:text-slate-300"
+								class="rounded-md bg-secondary px-2 py-1 text-xs font-medium text-slate-700 dark:bg-slate-800 dark:text-slate-300"
 							>
 								{item}
 							</span>

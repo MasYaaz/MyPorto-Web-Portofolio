@@ -1,17 +1,21 @@
 <script lang="ts">
+	import Back1 from '$lib/component/Background/Back1.svelte';
+	import github from '$lib/logo/github.svg';
+	import shutterstock from '$lib/logo/shutterstock.svg';
+
 	const socialLinks = [
 		{
 			name: 'Github',
 			label: 'Github',
 			href: 'https://github.com/MasYaaz',
-			icon: './images/github.svg',
+			icon: github,
 			shouldInvert: true
 		},
 		{
 			name: 'Assets',
 			label: 'Assets',
 			href: 'https://www.shutterstock.com/g/MasYaaz',
-			icon: './images/shutterstock.svg',
+			icon: shutterstock,
 			shouldInvert: false
 		},
 		{
@@ -25,24 +29,25 @@
 </script>
 
 <section
-	class="z-30 flex min-h-screen w-full flex-col items-center justify-center gap-12 bg-secondary py-20 dark:bg-primary"
+	class="relative flex min-h-screen w-full flex-col items-center justify-center gap-12 py-20 lg:py-0"
 	id="section_5"
 >
-	<div class="px-6 text-center">
+	<Back1 />
+	<div class="z-10 px-6 text-center">
 		<h2 class="mb-4 font-primary text-3xl font-black text-primary lg:text-5xl dark:text-secondary">
 			Mari Berkolaborasi
 		</h2>
-		<p class="text-primary/70 dark:text-secondary/70">
+		<p class="font-display text-primary dark:text-secondary">
 			Lihat hasil karya saya atau baca pemikiran saya di bawah ini.
 		</p>
 	</div>
 
-	<div class="container grid max-w-7xl grid-cols-1 gap-8 px-6 md:grid-cols-3 md:px-16 lg:px-0">
+	<div class="z-10 container grid max-w-7xl grid-cols-1 gap-8 px-6 md:grid-cols-3 md:px-16 lg:px-0">
 		{#each socialLinks as link}
 			<a
 				href={link.href}
 				target="_blank"
-				class="group flex flex-col items-center rounded-2xl bg-white/5 p-8 transition-all hover:bg-white/10"
+				class="group flex flex-col items-center p-8 transition-all"
 			>
 				<img
 					src={link.icon}
@@ -51,7 +56,7 @@
 					class:dark:invert={link.shouldInvert}
 					loading="lazy"
 				/>
-				<span class="font-bold dark:text-white">{link.label}</span>
+				<span class="font-bold text-primary dark:text-secondary">{link.label}</span>
 			</a>
 		{/each}
 	</div>

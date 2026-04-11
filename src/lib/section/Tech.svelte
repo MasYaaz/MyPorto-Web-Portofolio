@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Back2 from '$lib/component/Background/Back2.svelte';
+	import SectionTitle from '$lib/component/UIComponent/SectionTitle.svelte';
 	import TechCard from './Tech/TechCard.svelte';
 	import TechIcon from './Tech/TechIcon.svelte';
 
@@ -76,22 +78,20 @@
 </script>
 
 <section
-	class="flex min-h-screen w-full flex-col items-center justify-center gap-8 bg-secondary py-16 md:pt-30 dark:bg-primary"
+	class="relative flex min-h-screen w-full flex-col items-center justify-center gap-8 bg-secondary py-16 md:pt-30 dark:bg-primary"
 	id="section_3"
 >
-	<div class="container mx-auto w-full max-w-7xl px-6 text-primary dark:text-secondary">
-		<div class="bg-brown space-y-10 rounded-2xl border border-primary/5 p-8 shadow-xl">
-			<div class="text-center">
-				<h2
-					class="inline-block border-b-4 border-primary pb-1 font-primary text-xl font-bold uppercase md:text-2xl lg:text-4xl dark:border-secondary"
-				>
-					Tech Stack
-				</h2>
-			</div>
-
+	<Back2 />
+	<div
+		class="z-10 container mx-auto flex w-full max-w-7xl flex-col items-center gap-8 px-6 text-primary dark:text-secondary"
+	>
+		<SectionTitle title="Tech Stack" />
+		<div
+			class="scallop-box w-full space-y-10 border-4 border-primary bg-secondary p-8 shadow-[8px_8px_0_0_#000] dark:border-secondary dark:bg-primary dark:shadow-[8px_8px_0_0_#F5E6BE]"
+		>
 			<div class="space-y-4">
 				<h3
-					class="text-center font-display text-xs font-bold tracking-[0.2em] uppercase opacity-60 md:text-left"
+					class="text-center font-display text-xs font-black tracking-[0.2em] text-orange uppercase md:text-left dark:text-secondary"
 				>
 					Web Development & Runtime
 				</h3>
@@ -105,7 +105,7 @@
 			<div class="grid grid-cols-1 gap-8 md:grid-cols-2">
 				<div class="space-y-4">
 					<h3
-						class="text-center font-display text-xs font-bold tracking-[0.2em] uppercase opacity-60 md:text-left"
+						class="text-center font-display text-xs font-black tracking-[0.2em] text-orange uppercase md:text-left dark:text-secondary"
 					>
 						AI Integration
 					</h3>
@@ -118,7 +118,7 @@
 
 				<div class="space-y-4">
 					<h3
-						class="text-center font-display text-xs font-bold tracking-[0.2em] uppercase opacity-60 md:text-left"
+						class="text-center font-display text-xs font-black tracking-[0.2em] text-orange uppercase md:text-left dark:text-secondary"
 					>
 						Tools & Workflow
 					</h3>
