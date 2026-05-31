@@ -27,7 +27,7 @@
 
 	/* Warna Default (Navbar di atas + Light Mode) */
 	.btn-darkmode {
-		color: var(--color-primary); /* Gunakan variabel warna Tailwind kamu */
+		color: var(--color-orange); /* Gunakan variabel warna Tailwind kamu */
 		transition: color 0.3s ease;
 	}
 

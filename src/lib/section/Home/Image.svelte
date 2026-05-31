@@ -3,7 +3,11 @@
 </script>
 
 <!-- Posisikan ke kanan bawah -->
+<<<<<<< HEAD
 <div class="z-0 flex px-10 lg:w-[50%]">
+=======
+<div class="z-0 flex px-10 lg:w-[80%]">
+>>>>>>> dev
 	<img
 		src={image}
 		loading="eager"
