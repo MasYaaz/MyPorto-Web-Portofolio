@@ -29,7 +29,8 @@
 		rel="stylesheet"
 	/>
 
-	<link rel="icon" href="./logo.svg" />
+	<link rel="icon" href="./dark-theme.svg" media="(prefers-color-scheme: dark)" />
+	<link rel="icon" href="./light-theme.svg" media="(prefers-color-scheme: light)" />
 	<title>MyPorto - Web Portofolio</title>
 </svelte:head>
 
