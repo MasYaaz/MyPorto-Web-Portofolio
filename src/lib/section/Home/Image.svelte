@@ -3,7 +3,7 @@
 </script>
 
 <!-- Posisikan ke kanan bawah -->
-<div class="z-0 flex px-10 lg:w-[50%]">
+<div class="z-0 flex px-10 lg:w-[80%]">
 	<img
 		src={image}
 		loading="eager"

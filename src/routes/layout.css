@@ -19,7 +19,7 @@
 @font-face {
 	font-family: 'Cooper';
 	src: url('$lib/font/CooperBlkBT-Regular.woff2') format('woff2');
-	font-weight: normal;
+	font-weight: bolder;
 	font-style: normal;
 	font-display: swap;
 }
@@ -27,7 +27,7 @@
 @font-face {
 	font-family: 'Cooper';
 	src: url('$lib/font/CooperBlkBT-Italic.woff2') format('woff2');
-	font-weight: normal;
+	font-weight: bolder;
 	font-style: italic;
 	font-display: swap;
 }
