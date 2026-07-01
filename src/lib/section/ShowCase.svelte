@@ -46,7 +46,7 @@
 	<div
 		class="z-10 mx-auto flex max-w-7xl flex-col items-center px-6 transition-all duration-700 ease-out lg:px-0"
 	>
-		<div class="mb-12 text-center">
+		<div class="mb-12 text-center w-full flex items-center flex-col">
 			<SectionTitle title="Featured Projects" />
 			<p class="mt-4 max-w-2xl font-display text-primary dark:text-secondary">
 				Berikut adalah beberapa proyek pengembangan web dan sistem yang telah saya kerjakan
