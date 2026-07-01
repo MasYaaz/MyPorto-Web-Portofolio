@@ -17,13 +17,6 @@
 			href: 'https://www.shutterstock.com/g/MasYaaz',
 			icon: shutterstock,
 			shouldInvert: false
-		},
-		{
-			name: 'Blog',
-			label: 'Blog',
-			href: '/blog',
-			icon: 'https://unpkg.com/lucide-static@latest/icons/book-open.svg',
-			shouldInvert: true
 		}
 	];
 </script>
@@ -38,11 +31,11 @@
 			Mari Berkolaborasi
 		</h2>
 		<p class="font-display text-primary dark:text-secondary">
-			Lihat hasil karya saya atau baca pemikiran saya di bawah ini.
+			Mau lihat porto yang ku miliki, cari disini ya..!
 		</p>
 	</div>
 
-	<div class="z-10 container grid max-w-7xl grid-cols-1 gap-8 px-6 md:grid-cols-3 md:px-16 lg:px-0">
+	<div class="z-10 container grid max-w-7xl grid-cols-1 gap-8 px-6 md:grid-cols-2 md:px-16 lg:px-0">
 		{#each socialLinks as link}
 			<a
 				href={link.href}
