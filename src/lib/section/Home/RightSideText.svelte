@@ -1,6 +1,6 @@
 <script>
 	import { ui } from '$lib/stores/UIStates.svelte';
-	import { ArrowDown } from 'lucide-svelte';
+	import { ArrowDown } from '@lucide/svelte';
 </script>
 
 <div

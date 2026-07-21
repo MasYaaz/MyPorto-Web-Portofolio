@@ -4,7 +4,6 @@
 	import DekstopMenu from './Navbar/DekstopMenu.svelte';
 	import MobileMenu from './Navbar/MobileMenu.svelte';
 	import { ui } from '$lib/stores/UIStates.svelte';
-	import HomeButton from './Navbar/HomeButton.svelte';
 	import Logo from './Navbar/Logo.svelte';
 </script>
 
@@ -23,7 +22,6 @@
 			<DekstopMenu />
 
 			<div class="flex h-full w-[5%] items-center justify-end gap-4">
-				<HomeButton />
 				<DarkmodeButton />
 				<!-- Hamburger -->
 				<HamburgerButton />

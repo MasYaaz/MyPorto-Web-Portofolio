@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import { Undo2 } from 'lucide-svelte';
-	import { fade, fly } from 'svelte/transition';
+	import { Undo2 } from '@lucide/svelte';
+	import { fly } from 'svelte/transition';
 </script>
 
 <div class="flex min-h-screen w-full items-center justify-center bg-[#F8F5F0] p-4">
